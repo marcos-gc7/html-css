@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a {
+            color: cadetblue;
+            text-decoration: double;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkcyan;
+        }
+        a:hover {
+            color: black;
+        }
+
+        a:active {
+            color: darkgray;
+        }
+        
+        a::after {
+            content: ' [link]';
+            color: grey;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><a href="https://www.tiktok.com/foryou" target="_blank">TikTok</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            background-color: darkgray;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px rgb(155, 155, 155);
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: rgb(216, 252, 225);
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 10px 10px 5px 10px;
+        }
+
+        article > aside {
+            background-color: rgb(151, 151, 151);
+            padding: 2.5px 10px;
+            width: 103px;
+            margin: 10px 0 10px;
+        }
+
+        article > p {
+            text-align: justify;
+            text-indent: 20px;
+            margin: 0;
+        }
+
+        article > h2 {
+            margin-left: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Estrutura de um Site -->
+     <header>
+        <h1>Rei dos Preços</h1>
+        <nav>
+            <a href="#" class="menu">Início</a>
+            <a href="#" class="menu">Coleções</a>
+            <a href="#" class="menu">Sobre Nós</a>
+            <a href="#" class="menu">Atendimento</a>
+        </nav>
+     </header>
+     <main>                 
+        <section id="content">
+            <article>
+                <h2>Sobre Nós</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur possimus consequatur facilis excepturi accusantium nesciunt tempora ullam placeat odit temporibus minus iusto deserunt, error earum dolorem est voluptates voluptatibus eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, beatae? Tempora quos dolore similique cumque nemo minus, ducimus commodi provident? Ab unde eius tempora ipsam a et in maiores odit.</p>    
+                <aside>
+                    Rei dos Preços
+                </aside>            
+            </article>
+        </section>
+     </main>
+     <footer>
+        <p>Desenvolvido por Rei dos Preços.</p>
+     </footer>
+</body>
+</html>
