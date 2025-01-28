@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Responsiva</title>
     <style>
-        
 
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: antiquewhite;
+            margin-top: 0px;
         }
 
         main {
-            border-radius: ;
             margin: auto;
-            width: 800px;
+            max-width: 800px;
             background-color: white;
             padding: 20px;
             border-bottom-right-radius: 20px;
@@ -26,9 +25,14 @@
         h1 {
             text-align: center;
         }
+
         p {
             text-indent: 30px;
             text-align: justify;
+        }
+
+        div#container {
+            overflow-x: auto;
         }
 
         table {
@@ -36,7 +40,6 @@
             margin: auto;
             width: 1000px;
             height: 270px;
-            overflow-x: auto;
         }
 
         thead {
@@ -54,6 +57,10 @@
 
         th, td {
            border: 1px solid black;
+        }
+
+        tr:nth-child(2n) {
+            background-color: lightgrey;
         }
 
         td.num {
@@ -74,72 +81,74 @@
     <main>
         <h1>Exercício - Tabela Responsiva</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis, maiores, quaerat tempora voluptatum provident rem quo corporis ea asperiores quas voluptatem! Dignissimos vel dolores nobis aperiam molestias possimus amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo tempore esse at assumenda, labore ipsam reprehenderit illo corrupti ullam sint laudantium. Error aut consequatur fugit sapiente, hic quia quas?</p>
-        <table>
-            <thead>
-                <tr id="cabecalho">
-                    <th scope="col">Produto</th>
-                    <th scope="col">Categoria</th>
-                    <th scope="col">Preço Unitário</th>
-                    <th scope="col">Quantidade em Estoque</th>
-                    <th scope="col">Valor Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Camiseta</td>
-                    <td>Moda</td>
-                    <td class="num">R$ 50,00</td>
-                    <td class="qnt">30</td>
-                    <td class="num">R$ 1.500,00</td>
-                </tr>
-                <tr>
-                    <td>Calça Jeans</td>
-                    <td>Moda</td>
-                    <td class="num">R$ 100,00</td>
-                    <td class="qnt">20</td>
-                    <td class="num">R$ 2.000,00</td>
-                </tr>
-                <tr>
-                    <td>Tênis</td>
-                    <td>Calçados</td>
-                    <td class="num">R$ 150,00</td>
-                    <td class="qnt">15</td>
-                    <td class="num">R$ 2.250,00</td>
-                </tr>
-                <tr>
-                    <td>Blusa de Frio</td>
-                    <td>Moda</td>
-                    <td class="num">R$ 80,00</td>
-                    <td class="qnt">25</td>
-                    <td class="num">R$ 2.000,00</td>
-                </tr>
-                <tr>
-                    <td>Jaqueta de Couro</td>
-                    <td>Moda</td>
-                    <td class="num">R$ 200,00</td>
-                    <td class="qnt">10</td>
-                    <td class="num">R$ 2.000,00</td>
-                </tr>
-                <tr>
-                    <td>Bolsa de Couro</td>
-                    <td>Acessórios</td>
-                    <td class="num">R$ 120,00</td>
-                    <td class="qnt">18</td>
-                    <td class="num">R$ 2.160,00</td>
-                </tr>
-                <tr>
-                    <td>Relógio</td>
-                    <td>Acessórios</td>
-                    <td class="num">R$ 250,00</td>
-                    <td class="qnt">12</td>
-                    <td class="num">R$ 3.000,00</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <th scope="row" colspan="4">Total Geral</th>
-                <td class="num">R$ 14.910,00</td>
-            </tfoot>
-        </table>
+        <div id="container">
+            <table>
+                <thead>
+                    <tr id="cabecalho">
+                        <th scope="col">Produto</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Preço Unitário</th>
+                        <th scope="col">Quantidade em Estoque</th>
+                        <th scope="col">Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Camiseta</td>
+                        <td>Moda</td>
+                        <td class="num">R$ 50,00</td>
+                        <td class="qnt">30</td>
+                        <td class="num">R$ 1.500,00</td>
+                    </tr>
+                    <tr>
+                        <td>Calça Jeans</td>
+                        <td>Moda</td>
+                        <td class="num">R$ 100,00</td>
+                        <td class="qnt">20</td>
+                        <td class="num">R$ 2.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Tênis</td>
+                        <td>Calçados</td>
+                        <td class="num">R$ 150,00</td>
+                        <td class="qnt">15</td>
+                        <td class="num">R$ 2.250,00</td>
+                    </tr>
+                    <tr>
+                        <td>Blusa de Frio</td>
+                        <td>Moda</td>
+                        <td class="num">R$ 80,00</td>
+                        <td class="qnt">25</td>
+                        <td class="num">R$ 2.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Jaqueta de Couro</td>
+                        <td>Moda</td>
+                        <td class="num">R$ 200,00</td>
+                        <td class="qnt">10</td>
+                        <td class="num">R$ 2.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Bolsa de Couro</td>
+                        <td>Acessórios</td>
+                        <td class="num">R$ 120,00</td>
+                        <td class="qnt">18</td>
+                        <td class="num">R$ 2.160,00</td>
+                    </tr>
+                    <tr>
+                        <td>Relógio</td>
+                        <td>Acessórios</td>
+                        <td class="num">R$ 250,00</td>
+                        <td class="qnt">12</td>
+                        <td class="num">R$ 3.000,00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th scope="row" colspan="4">Total Geral</th>
+                    <td class="num">R$ 14.910,00</td>
+                </tfoot>
+            </table>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quis, maiores, quaerat tempora voluptatum provident rem quo corporis ea asperiores quas voluptatem! Dignissimos vel dolores nobis aperiam molestias possimus amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo tempore esse at assumenda, labore ipsam reprehenderit illo corrupti ullam sint laudantium. Error aut consequatur fugit sapiente, hic quia quas?</p>
     </main>
 
