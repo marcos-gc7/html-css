@@ -9,13 +9,21 @@
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
-            <legend>Esportes Favoritos</legend>
-            <input type="checkbox" name="esf1" id="iesf1"><label for="1esf1">Formula 1</label>
-            <input type="checkbox" name="esufc" id="iesufc"><label for="1esufc">UFC</label>
-            <input type="checkbox" name="esvolei" id="iesvolei"><label for="iesvolei">Vólei</label>
-            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label>
-
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"><label for="isxmas" value="M" >Masculino</label>
+            <input type="radio" name="sexo" id="isxfem"><label for="isxfem" value="F" >Feminino</label>
         </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esf1" id="iesf1"><label for="iesf1">Formula 1</label><br>
+            <input type="checkbox" name="esufc" id="iesufc"><label for="iesufc">UFC</label><br>
+            <input type="checkbox" name="esvolei" id="iesvolei"><label for="iesvolei">Vólei</label><br>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
