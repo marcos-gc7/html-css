@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }   
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+            color: white;
+            text-shadow: 2px 3px 0px /*#175c17 - Removido por indicação do ChatGPT*/ #0d3c0d;
+        }
+
+        #container{
+            background-color: white;
+            margin: auto;
+            max-width: 400px;
+            height: 300px;
+            padding: 20px;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.205);
+            
+        }
+
+        p {
+            font-size: 0.8em;
+            margin-bottom: 3px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        input.box {
+            padding: 7px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 90%;
+            border: 1px solid black;
+        }
+
+        #bottom {
+            background-color: #00aeff;
+            padding: 7px;
+            width: /*100% - Removido por indicação do ChatGPT*/ 90%;
+            border: 1px solid rgba(0, 0, 0, 0.719);
+            border-radius: 5px;
+            color: white;
+        }
+
+        #bottom:hover {
+            background-color: #029de6;
+        }
+
+        .box, #bottom {
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro Simples</h1>
+    <div id="container">
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p><label for="iname">Nome:</label></p>
+            <input type="text" name="name" class="box" id="iname" required placeholder="Nome Completo" autocomplete="name">
+            <p><label for="iemail">E-mail:</label></p>
+            <input type="email" name="email" class="box" id="iemail" required placeholder="seunome@xxxx.com" autocomplete="email">
+            <p><label for="isen">Senha:</label></p>
+            <input type="password" name="sen" class="box" id="isen" required placeholder="Digite sua senha" autocomplete="current-password">
+            <p><label for="idate">Data de Nascimento:</label></p>
+            <input type="date" name="date" class="box" id="idate" required><br>
+            <input id="bottom" type="submit" value="Enviar Dados">
+        </form>
+    </div>
+</body>
+</html>
