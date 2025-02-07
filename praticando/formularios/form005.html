@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }   
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+            color: white;
+            text-shadow: 2px 3px 0px #027db6;
+        }
+
+        #container{
+            background-color: white;
+            margin: auto;
+            max-width: 400px;
+            height: 323px;
+            padding: 20px;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.205);
+            box-sizing: border-box;
+            
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 3px;
+            margin-left: 10px;
+            font-weight: 500;
+        }
+
+        input.box {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 90%;
+            border: 1px solid black;
+        }
+
+        input#itermos {
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 5px;
+            margin-left: 7px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        #iquant {
+            width: 70px;
+            padding: 5px;
+            margin-left: 7px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        label#itermos {
+            font-size: 0.8em;
+        }
+
+        fieldset {
+            margin-left: 7px;
+            padding: 7px;
+            border: 1px solid black;
+            border-radius: 5px;
+            max-width: 210px;
+            margin-bottom: 20px;
+        }
+
+        fieldset input {
+            margin-left: 5px;
+        }
+
+        fieldset label {
+            margin-left: 5px;
+        } 
+        
+        
+
+        #bottom {
+            background-color: #00aeff;
+            padding: 15px;
+            width: 70%;
+            border: 1px solid rgba(0, 0, 0, 0.719);
+            border-radius: 5px;
+            color: white;
+        }
+
+        #bottom:hover {
+            background-color: #029de6;
+            cursor: pointer;
+            transition: 0.3s; 
+        }
+
+        .box, #bottom {
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Seleção de Produtos</h1>
+    <div id="container">
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p><label for="iname">Nome:</label></p>
+            <input type="text" name="name" class="box" id="iname" required placeholder="Nome Completo" autocomplete="name">
+
+            <select name="roupas" id="iroupas" required>
+                <option value="">--- Escolha uma opção ---</option>
+                <option value="VIP">Área VIP</option>
+                <option value="EXC">Camarote exclusivo</option>
+                <option value="L1">Lounge 1</option>
+                <option value="L2">Lounge 2</option>
+            </select>
+
+            <p><label for="iquant">Quantidade de Ingressos:</label></p>
+            <input type="number" name="quant" id="iquant" min="0" max="5" required placeholder="0">
+
+            <fieldset>
+                <legend>Forma de Pagamento</legend>
+                <input type="radio" name="payment" id="icard" value="cartao" required>
+                <label for="icard">Cartão</label>
+            
+                <input type="radio" name="payment" id="iboleto" value="boleto" required>
+                <label for="iboleto">Boleto</label>
+            
+                <input type="radio" name="payment" id="ipix" value="pix" required>
+                <label for="ipix">Pix</label>
+            </fieldset>
+
+            <input type="checkbox" name="termos" id="itermos">
+            <p><label for="itermos">Você aceita todos os termos de uso do nosso site?</label></p>
+
+            <input id="bottom" type="submit" value="Enviar Dados">
+        </form>
+    </div>
+</body>
+</html>
