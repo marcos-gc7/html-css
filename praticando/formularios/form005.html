@@ -23,10 +23,10 @@
         }
 
         #container{
-            background-color: white;
+            background-color: rgb(243, 250, 255);
             margin: auto;
             max-width: 400px;
-            height: 323px;
+            height: 364px;
             padding: 20px;
             box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.205);
             box-sizing: border-box;
@@ -34,7 +34,7 @@
         }
 
         p {
-            font-size: 1em;
+            font-size: 0.8em;
             margin-bottom: 3px;
             margin-left: 10px;
             font-weight: 500;
@@ -144,8 +144,10 @@
                 <label for="ipix">Pix</label>
             </fieldset>
 
-            <input type="checkbox" name="termos" id="itermos">
-            <p><label for="itermos">Você aceita todos os termos de uso do nosso site?</label></p>
+            <p>
+                <input type="checkbox" name="termos" id="itermos" required>
+                <label for="itermos">Você aceita todos os termos de uso do nosso site?</label>
+            </p>
 
             <input id="bottom" type="submit" value="Enviar Dados">
         </form>
