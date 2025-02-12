@@ -22,6 +22,11 @@ html, body {
     scrollbar-width: none; */
 }
 
+body {
+    background: black url(../imagens/back.jpg) center center no-repeat fixed;
+    background-size: cover; 
+}
+
 header {
     background-color: gray;
     color: white;
@@ -37,26 +42,21 @@ header > h1 {
 }
 
 main {
-    background: black url(../imagens/back.jpg) center center no-repeat fixed;
-    background-size: cover; 
+    margin: auto;
+    display: block;
     height: 100vh;
     min-height: 100vh;
     padding-bottom: 50px;
-}
-
-article {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.829);
-    max-width: 580px;
-    margin: auto;
-    display: block;
-    text-indent: 20px;
-    text-align: justify;
+    min-width: 320px;
+    max-width: 600px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.404);
-
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.829);
+    box-sizing: border-box;
 }
+
 article > h2 {
     text-align: center;
     font-size: 2em;
@@ -67,10 +67,12 @@ article > p {
     padding: 10px;
     font-size: 1.2em;
     font-family: "Oswald", serif;
+    text-indent: 20px;
+    text-align: justify;
 }
 
 article > img {
-    max-width: 580px;
+    width: 560px;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.466);
 }
 

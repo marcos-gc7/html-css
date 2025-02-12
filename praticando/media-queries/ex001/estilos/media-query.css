@@ -6,18 +6,17 @@ Em telas grandes (acima de 1025px), o layout tenha três colunas.
 */
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .content {
-        display: flex;
-        align-items: center;
-        gap: 20px;
+    main {
+        max-width: 900px;
     }
 
-    .content p {
-        flex: 1;
+    article > h2 {
+        font-size: 2.2em;
+    } 
+
+    article > p {
+        font-size: 1.5em;
     }
 
-    .content img {
-        max-width: 40%;
-        height: auto;
-    }
+   
 }
