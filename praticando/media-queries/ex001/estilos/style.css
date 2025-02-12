@@ -72,8 +72,10 @@ article > p {
 }
 
 article > img {
-    max-width: 560px;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.466);
+    width: 100%;  /* Faz a imagem se ajustar ao contêiner */
+    max-width: 560px; /* Não ultrapassa esse tamanho */
+    display: block; /* Evita espaços em branco extras */
+    margin: auto; /* Centraliza dentro do `main` */
 }
 
 
