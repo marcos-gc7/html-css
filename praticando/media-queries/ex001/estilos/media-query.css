@@ -7,7 +7,7 @@ Em telas grandes (acima de 1025px), o layout tenha três colunas.
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     main {
-        max-width: 900px;
+        width: 90vw;
     }
 
     article > h2 {
@@ -18,5 +18,26 @@ Em telas grandes (acima de 1025px), o layout tenha três colunas.
         font-size: 1.5em;
     }
 
-   
+}
+
+@media screen and (min-width: 1025px) {
+    header {
+           padding: 30px;
+    }
+
+    header > h1 {
+        font-size: 3.5em;
+    }
+    
+    main {
+        max-width: 1200px;
+    }
+
+    article > h2 {
+        font-size: 2.5em;
+    }
+
+    article > p {
+        font-size: 1.7em;
+    }
 }

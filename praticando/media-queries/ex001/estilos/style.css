@@ -30,6 +30,7 @@ body {
 header {
     background-color: gray;
     color: white;
+    min-width: 320px;
     text-align: center;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
     padding: 20px;
@@ -44,8 +45,7 @@ header > h1 {
 main {
     margin: auto;
     display: block;
-    height: 100%;
-    min-height: 100vh;
+    min-height: auto;
     padding-bottom: 50px;
     min-width: 320px;
     max-width: 600px;
@@ -76,6 +76,7 @@ article > img {
     max-width: 560px; /* Não ultrapassa esse tamanho */
     display: block; /* Evita espaços em branco extras */
     margin: auto; /* Centraliza dentro do `main` */
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.425);
 }
 
 
