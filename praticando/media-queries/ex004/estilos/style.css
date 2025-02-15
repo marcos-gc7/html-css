@@ -3,24 +3,64 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 body {
     background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gray;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+    text-align: center;
+    padding: 20px;
+}
+
+menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(85, 85, 85);
+    padding: 5px 0px;
+}
+
+div.item {
+    font-weight: bolder;
+    background-color: rgb(32, 32, 32);
+    padding: 10px;
+    margin: 2.5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.item > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+div.item:hover {
+    background-color: rgb(59, 59, 59);
+    transition: .3s;
 }
 
 main { 
     margin: auto;
     max-width: 600px; 
-    background-color: lightblue;
+    background-color: antiquewhite;
     padding: 30px;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.281);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-h1 {
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
     text-align: center;
     font-variant: small-caps;
