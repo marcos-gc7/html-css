@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div.conteiner {
+            display: flex;
+            flex-wrap: wrap;
+            
+            width: 100%; /* Garante que ocupa toda a largura */
+        }
+
+        div.card {
+            flex-basis: 25%; /* Desktop: 4 cards por linha */
+            height: 150px; /* Aumentei para melhor visualização */
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+
+        /* Tablet: 2 cards por linha */
+        @media screen and (max-width: 1024px) {
+            div.card {
+                background-color: red;
+                flex-basis: 50%;
+            }
+        }
+
+        /* Mobile: 1 card por linha */
+        @media screen and (max-width: 600px) {
+            div.card {
+                background-color: blue;
+                flex-basis: 100%;
+            }
+}
+
+    </style>
 </head>
 <body>
-    
+    <div class="conteiner">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
 </body>
 </html>
 
